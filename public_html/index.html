@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Problem 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function Problem1() {
+                var sum = 0; 
+                for(var i = 0;i<1000;i++) {
+                    if(i % 5 == 0 || i % 3 == 0) {
+                        sum += i;
+                    }
+                }
+                document.getElementById("answer").innerHTML += sum;
+            }
+        </script>
+        <p> This code finds the sum of all the multiples of 3 or 5 below 1000.  </p>
+        <p id = "answer"> And the sum of all the multiples of 5 and 3 below 1000 is : </p> 
+        <p id ="show"></p>
+        <button onclick="Problem1();">Calculate</button>
+    </body>
+</html>
